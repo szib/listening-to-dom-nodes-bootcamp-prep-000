@@ -26,6 +26,8 @@ function bubble(e) {
   // if `this` is a bit confusing, don't worry —
   // for now, know that it refers to the div that
   // is triggering the current event handler.
+  
+  e.stopPropagation();
   console.log(this.firstChild.nodeValue.trim() + ' bubbled');
 }
  
